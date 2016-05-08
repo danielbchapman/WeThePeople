@@ -15,11 +15,48 @@
 		</repository>
 	</repositories>
 
+	<properties>
+		<jersey2.version>2.22</jersey2.version>
+		<jaxrs.version>2.0.1</jaxrs.version>
+	</properties>
+
 	<dependencies>
+		<!-- JAX-RS -->
 		<dependency>
-			<groupId>com.sun.jersey</groupId>
+			<groupId>javax.ws.rs</groupId>
+			<artifactId>javax.ws.rs-api</artifactId>
+			<version>${jaxrs.version}</version>
+		</dependency>
+		<!-- Jersey 2.19 -->
+		<dependency>
+			<groupId>org.glassfish.jersey.containers</groupId>
+			<artifactId>jersey-container-servlet</artifactId>
+			<version>${jersey2.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.core</groupId>
 			<artifactId>jersey-server</artifactId>
-			<version>1.8</version>
+			<version>${jersey2.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.core</groupId>
+			<artifactId>jersey-client</artifactId>
+			<version>${jersey2.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.2</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit-dep</artifactId>
+			<version>4.8.2</version>
 		</dependency>
 	</dependencies>
 	<build>
