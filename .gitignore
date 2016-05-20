@@ -1,3 +1,4 @@
 *.classpath
 Server/Java/.project
 Server/Java/.settings/
+*.DS_Store
